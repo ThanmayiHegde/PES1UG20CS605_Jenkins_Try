@@ -8,16 +8,15 @@ pipeline{
                 echo 'BUILD IS SUCCESSFULL'
             }
         }
-    
-stage('Test'){
-     steps{
-         sh './PES1UG20CS605'
-         echo 'TEST EXECUTED SUCCESSFULLY'
-      }
- }
+        stage('Test')){
+            steps{
+                sh './PES1UG20CS605'
+                echo 'TEST EXECUTED SUCCESSFULLY'
+            }
+        }
         stage('Deploy'){
-        steps{
-        echo 'DEPLOY SUCCESSFULL'
+            steps{
+                echo 'DEPLOY SUCCESSFULL'
             }
         }
     }
@@ -27,4 +26,3 @@ stage('Test'){
         }
     }
 }
-    
