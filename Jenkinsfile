@@ -8,13 +8,13 @@ pipeline{
                 echo 'BUILD IS SUCCESSFULL'
             }
         }
-        stage('Test')){
+        stage('Test'){
             steps{
                 sh './PES1UG20CS605'
                 echo 'TEST EXECUTED SUCCESSFULLY'
             }
         }
-        stage('Deploy'){
+        stage('Deploys'){
             steps{
                 echo 'DEPLOY SUCCESSFULL'
             }
